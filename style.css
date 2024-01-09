@@ -1,6 +1,203 @@
+@font-face {
+    font-family: '7NeutralGrotesk';
+    src: url(./sources/font/7NeutralGrotesk-Regular.otf), url(./sources/font/7NeutralGrotesk-Regular.ttf);
+}
+
+@font-face {
+    font-family: '8NeutralGrotesk';
+    src: url(./sources/font/8NeutralGrotesk-RegularItalic.otf), url(./sources/font/8NeutralGrotesk-RegularItalic.ttf);
+}
+
+@font-face {
+    font-family: 'MinionPro';
+    src: url(./sources/font/MinionPro-Regular.otf), url(./sources/font/MinionPro-Medium.otf), url(./sources/font/MinionPro-It.otf), url(./sources/font/MinionPro-Bold.otf), url(./sources/font/MinionPro-Semibold.otf);
+}
+
+@font-face {
+    font-family: 'NaturalMono';
+    src: url(./sources/font/Natural\ Mono-Regular.ttf), url(./sources/font/Natural\ Mono\ Alt-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'PPMondwest';
+    src: url(./sources/font/PPMondwest-Regular.otf);
+}
+
+@font-face {
+    font-family: 'PPNeueBit';
+    src: url(./sources/font/PPNeueBit-Bold.otf);
+}
+
+@font-face {
+    font-family: 'RevolverBlackletter';
+    src: url(./sources/font/RevolverBlackletter-Regular.otf);
+}
+
 * {
+    margin: 0;
+    padding: 0;
+    background: #dbdbdb;
+}
+
+body {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+nav {
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 50px 24px;
+}
+
+nav a {
+    font-family: '8NeutralGrotesk';
+    text-decoration: none;
+    margin-right: 35px;
+    color: rgb(156, 156, 156);
+}
+
+.main-container {
     margin: 0;
     padding: 0;
 }
 
+.hero {
+    text-align: left;
+}
 
+.head-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero h1 {
+    font-family: '7NeutralGrotesk';
+    font-size: 100px;
+    color: #181818;
+    margin-top: 50px;
+    margin-bottom: 24px;
+}
+
+.subtitle {
+    font-family: 'PPMondwest';
+    font-style: italic;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: #696969;
+}
+
+.sections-container {
+    width: 100%;
+    margin: 100px auto 0;
+}
+
+.sections-container h2 {
+    font-family: 'PPMondwest';
+    font-style: italic;
+    font-size: 50px;
+    letter-spacing: -2px;
+    text-align: left;
+    margin: 16px 0 24px 32px;
+}
+
+.sections-container .product-list {
+    text-align: center;
+    margin: 50vh 0;
+}
+
+.sections-container .product-list li {
+    font-family: 'MinionPro';
+    font-weight: 800;
+    list-style: none;
+}
+
+.sections-container img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 0 24px 0;
+}
+
+.sections-container p {
+    font-family: 'NaturalMono';
+    font-size: 20px;
+    margin-left: 64px;
+}
+
+.list-content {
+    font-family: 'NaturalMono';
+    font-style: italic;
+    margin: 24px 0 24px 85px;
+}
+
+.divider {
+    width: 15px;
+    height: 15px;
+    margin-left: 16px;
+    background-color: #8b8b8b;
+}
+
+.main-footer {
+    text-align: center;
+    font-family: 'NaturalMono';
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+
+.product-contact {
+    text-align: center;
+    width: 100%;
+    margin: 100px 0 100px 0;
+}
+
+.product-contact .email {
+    font-family: 'NaturalMono';
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#email {
+    text-align: center;
+    font-family: 'NaturalMono';
+    font-size: 18px;
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+}
+
+
+.product-contact .message {
+    font-family: 'NaturalMono';
+    font-size: 18px;
+}
+
+.msg {
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 500px;
+    height: 350px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+@media (max-width: 1100px) {
+    h1,
+    h2,
+    ul,
+    .sections-container p,
+    .subtitle {
+        padding: 0 10px;
+    }
+}
