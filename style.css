@@ -44,26 +44,25 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: #dbdbdb;
 }
 
 body {
     max-width: 1110px;
     margin: 0 auto;
+    background-color: #e0e0e0;
 }
 
 nav {
-    text-align: left;
     font-size: 24px;
     text-transform: uppercase;
-    margin: 50px 24px;
+    margin: 24px 0 10vh 0;
 }
 
 nav a {
     font-family: '8NeutralGrotesk';
     text-decoration: none;
+    color: #7e7e7e;
     margin-right: 35px;
-    color: rgb(156, 156, 156);
 }
 
 .main-container {
@@ -80,28 +79,34 @@ nav a {
 
 .head-img {
     width: 100%;
-    height: 50vh;
+    height: 450px;
     object-fit: cover;
-    object-position: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 25px;
-
 }
+
+/* a img:last-child {
+    display: none;
+}
+
+a:hover img:last-child {
+    display: block;
+}
+
+a:hover img:first-child {
+    display: none;
+} */
 
 .title {
     font-family: '7NeutralGrotesk';
-    font-size: 100px;
-    color: #c9c9c9;
-    margin-bottom: 20px;
+    font-size: 200px;
+    margin-bottom: 20vh;
 
     width: 100%;
-    color: rgba(46, 46, 46, 0.2);
-    background: linear-gradient(to right, #1b1b1b, #006cff) no-repeat;
+    color: rgba(146, 146, 146, 0.2);
+    background: linear-gradient(to right, #1b1b1b, #006CFF) no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
     background-size: 0%;
-    transition: background-size cubic-bezier(.1, .5, .5, 1) 0.5s;
+    transition: background-size cubic-bezier(.1, .5, .5, 5) 0.5s;
 
     display: flex;
     flex-direction: column;
@@ -113,15 +118,12 @@ nav a {
 .subtitle {
     font-family: 'PPMondwest';
     font-style: italic;
-    font-size: 25px;
+    font-size: 18px;
     letter-spacing: 1px;
     color: #696969;
+    margin: 16px 0 20vh 0;
 }
 
-.sections-container {
-    width: 100%;
-    margin: 100px auto 0;
-}
 
 .sections-container h2 {
     font-family: 'PPMondwest';
@@ -130,12 +132,12 @@ nav a {
     font-size: 50px;
     letter-spacing: -2px;
     text-align: left;
-    margin: 16px 0 24px 32px;
+    margin: 16px 0 0 24px;
 }
 
 .sections-container .product-list {
     text-align: center;
-    margin: 50vh 0;
+    margin: 10vh 0 10vh 0;
 }
 
 .sections-container .product-list li {
@@ -144,24 +146,62 @@ nav a {
     list-style: none;
 }
 
-.sections-container img {
+.sections-container .img {
     width: 100%;
-    object-fit: cover;
-    object-position: center;
+    min-height: 450px;
+
+    background-image: url(./sources/img/1.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
+    background-size: contain;
+
     margin: 0 0 24px 0;
-    border-radius: 20px;
+}
+
+.sections-container .img-2 {
+    width: 100%;
+    min-height: 450px;
+
+    background-image: url(./sources/img/2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: contain;
+
+    margin: 0 0 24px 0;
+}
+
+.sections-container .img-3 {
+    width: 100%;
+    min-height: 450px;
+
+    background-image: url(./sources/img/3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: contain;
+
+    margin: 0 0 24px 0;
+}
+
+.sections-container .img-4 {
+    width: 100%;
+    min-height: 450px;
+
+    background-image: url(./sources/img/4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: contain;
+
+    margin: 0 0 24px 0;
 }
 
 .sections-container p {
     font-family: 'NaturalMono';
     font-size: 20px;
     margin-left: 64px;
-}
-
-.product-list {
-    background-color: #006cff;
 }
 
 .list-content {
@@ -173,7 +213,7 @@ nav a {
 .divider {
     width: 15px;
     height: 15px;
-    margin-left: 16px;
+    margin: 16px;
     background-color: #8b8b8b;
 }
 
@@ -181,7 +221,7 @@ nav a {
     text-align: center;
     font-family: 'NaturalMono';
     font-size: 13px;
-    margin-bottom: 24px;
+    margin: 24px 0 24px 0;
 }
 
 .product-contact {
@@ -229,13 +269,29 @@ nav a {
     border-radius: 5px;
 }
 
+.main-container .back-button {
+    text-decoration: none;
+    font-family: 'NaturalMono';
+    font-size: 18px;
+    font-style: italic;
+    color: #696969;
+}
+
 @media (max-width: 1100px) {
 
     h1,
     h2,
     ul,
+    nav,
     .sections-container p,
     .subtitle {
         padding: 0 10px;
+    }
+
+    .sections-container .img,
+    .sections-container .img-2,
+    .sections-container .img-3,
+    .sections-container .img-4 {
+        background-size: cover;
     }
 }
