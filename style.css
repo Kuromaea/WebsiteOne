@@ -1,21 +1,28 @@
 @font-face {
     font-family: '7NeutralGrotesk';
-    src: url(./sources/font/7NeutralGrotesk-Regular.otf), url(./sources/font/7NeutralGrotesk-Regular.ttf);
+    src: url(./sources/font/7NeutralGrotesk-Regular.otf),
+        url(./sources/font/7NeutralGrotesk-Regular.ttf);
 }
 
 @font-face {
     font-family: '8NeutralGrotesk';
-    src: url(./sources/font/8NeutralGrotesk-RegularItalic.otf), url(./sources/font/8NeutralGrotesk-RegularItalic.ttf);
+    src: url(./sources/font/8NeutralGrotesk-RegularItalic.otf),
+        url(./sources/font/8NeutralGrotesk-RegularItalic.ttf);
 }
 
 @font-face {
     font-family: 'MinionPro';
-    src: url(./sources/font/MinionPro-Regular.otf), url(./sources/font/MinionPro-Medium.otf), url(./sources/font/MinionPro-It.otf), url(./sources/font/MinionPro-Bold.otf), url(./sources/font/MinionPro-Semibold.otf);
+    src: url(./sources/font/MinionPro-Regular.otf),
+        url(./sources/font/MinionPro-Medium.otf),
+        url(./sources/font/MinionPro-It.otf),
+        url(./sources/font/MinionPro-Bold.otf),
+        url(./sources/font/MinionPro-Semibold.otf);
 }
 
 @font-face {
     font-family: 'NaturalMono';
-    src: url(./sources/font/Natural\ Mono-Regular.ttf), url(./sources/font/Natural\ Mono\ Alt-Regular.ttf);
+    src: url(./sources/font/Natural\ Mono-Regular.ttf),
+        url(./sources/font/Natural\ Mono\ Alt-Regular.ttf);
 }
 
 @font-face {
@@ -34,6 +41,7 @@
 }
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     background: #dbdbdb;
@@ -64,24 +72,42 @@ nav a {
 }
 
 .hero {
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .head-img {
     width: 100%;
-    height: 350px;
+    height: 50vh;
     object-fit: cover;
     object-position: center;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 25px;
+    margin-bottom: 20vh;
 }
 
-.hero h1 {
+.title {
     font-family: '7NeutralGrotesk';
     font-size: 100px;
-    color: #181818;
-    margin-top: 50px;
-    margin-bottom: 24px;
+    color: #c9c9c9;
+    margin-bottom: 20px;
+
+    width: 100%;
+    color: rgba(46, 46, 46, 0.2);
+    background: linear-gradient(to right, #1b1b1b, #006cff) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 0%;
+    transition: background-size cubic-bezier(.1, .5, .5, 1) 0.5s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
 }
 
 .subtitle {
@@ -100,6 +126,7 @@ nav a {
 .sections-container h2 {
     font-family: 'PPMondwest';
     font-style: italic;
+    color: #333333;
     font-size: 50px;
     letter-spacing: -2px;
     text-align: left;
@@ -130,6 +157,10 @@ nav a {
     font-family: 'NaturalMono';
     font-size: 20px;
     margin-left: 64px;
+}
+
+.product-list {
+    background-color: #006cff;
 }
 
 .list-content {
@@ -198,6 +229,7 @@ nav a {
 }
 
 @media (max-width: 1100px) {
+
     h1,
     h2,
     ul,
