@@ -53,7 +53,7 @@ body {
 }
 
 nav {
-    text-align: center;
+    text-align: left;
     font-size: 24px;
     text-transform: uppercase;
     margin: 50px 24px;
@@ -86,7 +86,7 @@ nav a {
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 25px;
-    margin-bottom: 20vh;
+
 }
 
 .title {
@@ -151,6 +151,7 @@ nav a {
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 0 24px 0;
+    border-radius: 20px;
 }
 
 .sections-container p {
