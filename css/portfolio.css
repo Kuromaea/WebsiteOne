@@ -1,44 +1,4 @@
-@font-face {
-    font-family: '7NeutralGrotesk';
-    src: url(./sources/font/7NeutralGrotesk-Regular.otf),
-        url(./sources/font/7NeutralGrotesk-Regular.ttf);
-}
-
-@font-face {
-    font-family: '8NeutralGrotesk';
-    src: url(./sources/font/8NeutralGrotesk-RegularItalic.otf),
-        url(./sources/font/8NeutralGrotesk-RegularItalic.ttf);
-}
-
-@font-face {
-    font-family: 'MinionPro';
-    src: url(./sources/font/MinionPro-Regular.otf),
-        url(./sources/font/MinionPro-Medium.otf),
-        url(./sources/font/MinionPro-It.otf),
-        url(./sources/font/MinionPro-Bold.otf),
-        url(./sources/font/MinionPro-Semibold.otf);
-}
-
-@font-face {
-    font-family: 'NaturalMono';
-    src: url(./sources/font/Natural\ Mono-Regular.ttf),
-        url(./sources/font/Natural\ Mono\ Alt-Regular.ttf);
-}
-
-@font-face {
-    font-family: 'PPMondwest';
-    src: url(./sources/font/PPMondwest-Regular.otf);
-}
-
-@font-face {
-    font-family: 'PPNeueBit';
-    src: url(./sources/font/PPNeueBit-Bold.otf);
-}
-
-@font-face {
-    font-family: 'RevolverBlackletter';
-    src: url(./sources/font/RevolverBlackletter-Regular.otf);
-}
+@import url(./font.css);
 
 * {
     box-sizing: border-box;
@@ -83,18 +43,6 @@ nav a {
     object-fit: cover;
 }
 
-/* a img:last-child {
-    display: none;
-}
-
-a:hover img:last-child {
-    display: block;
-}
-
-a:hover img:first-child {
-    display: none;
-} */
-
 .title {
     font-family: '7NeutralGrotesk';
     font-size: 100px;
@@ -115,14 +63,13 @@ a:hover img:first-child {
 }
 
 .subtitle {
-    font-family: 'PPMondwest';
+    font-family: 'NaturalMono';
     font-style: italic;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 1px;
     color: #696969;
     margin: 16px 0 20vh 0;
 }
-
 
 .sections-container h2 {
     font-family: 'PPMondwest';
@@ -134,22 +81,11 @@ a:hover img:first-child {
     margin: 16px 0 24px 24px;
 }
 
-.sections-container .product-list {
-    text-align: center;
-    margin: 10vh 0 10vh 0;
-}
-
-.sections-container .product-list li {
-    font-family: 'MinionPro';
-    font-weight: 800;
-    list-style: none;
-}
-
 .sections-container .img {
     width: 100%;
     min-height: 450px;
 
-    background-image: url(./sources/img/1.png);
+    background-image: url(../sources/img/1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -162,7 +98,7 @@ a:hover img:first-child {
     width: 100%;
     min-height: 450px;
 
-    background-image: url(./sources/img/2.png);
+    background-image: url(../sources/img/2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -175,7 +111,7 @@ a:hover img:first-child {
     width: 100%;
     min-height: 450px;
 
-    background-image: url(./sources/img/3.png);
+    background-image: url(../sources/img/3.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -188,19 +124,13 @@ a:hover img:first-child {
     width: 100%;
     min-height: 450px;
 
-    background-image: url(./sources/img/4.png);
+    background-image: url(../sources/img/4.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: contain;
 
     margin: 0 0 24px 0;
-}
-
-.sections-container p {
-    font-family: 'NaturalMono';
-    font-size: 20px;
-    margin-left: 64px;
 }
 
 .list-content {
@@ -223,51 +153,6 @@ a:hover img:first-child {
     margin: 24px 0 24px 0;
 }
 
-.product-contact {
-    text-align: center;
-    width: 100%;
-    margin: 100px 0 100px 0;
-}
-
-.product-contact .email {
-    font-family: 'NaturalMono';
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-#email {
-    text-align: center;
-    font-family: 'NaturalMono';
-    font-size: 18px;
-    width: 500px;
-    height: 50px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    padding: 20px;
-}
-
-
-.product-contact .message {
-    font-family: 'NaturalMono';
-    font-size: 18px;
-}
-
-.msg {
-    display: block;
-    margin: 20px auto 0 auto;
-    width: 500px;
-    height: 350px;
-    border-radius: 5px;
-    padding: 20px;
-}
-
-.submit {
-    margin-top: 24px;
-    width: 100px;
-    height: 50px;
-    border-radius: 5px;
-}
-
 .main-container .back-button {
     text-decoration: none;
     font-family: 'NaturalMono';
@@ -282,7 +167,6 @@ a:hover img:first-child {
     h2,
     ul,
     nav,
-    .sections-container p,
     .subtitle {
         padding: 0 10px;
     }

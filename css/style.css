@@ -1,0 +1,139 @@
+@import url(./font.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1110px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+}
+
+nav {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 20vh 0 10vh 0;
+}
+
+nav a {
+    font-family: '8NeutralGrotesk';
+    text-decoration: none;
+    color: #7e7e7e;
+    margin-right: 35px;
+}
+
+.main-container {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.head-img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+/* a img:last-child {
+    display: none;
+}
+
+a:hover img:last-child {
+    display: block;
+}
+
+a:hover img:first-child {
+    display: none;
+} */
+
+.title {
+    font-family: '7NeutralGrotesk';
+    font-size: 100px;
+
+    width: 100%;
+    color: rgba(146, 146, 146, 0.2);
+    background: linear-gradient(to right, #1b1b1b, #cbcbcb) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 0%;
+    transition: background-size cubic-bezier(.1, .5, .5, 5) 0.5s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+
+.subtitle {
+    font-family: 'PPMondwest';
+    font-style: italic;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #696969;
+    margin: 16px 0 20vh 0;
+}
+
+
+.sections-container h2 {
+    font-family: 'PPMondwest';
+    font-style: italic;
+    color: #333333;
+    font-size: 50px;
+    letter-spacing: -2px;
+    text-align: left;
+    margin: 16px 0 24px 24px;
+}
+
+.sections-container .product-list {
+    text-align: center;
+    margin: 10vh 0 10vh 0;
+}
+
+.sections-container .product-list li {
+    font-family: 'MinionPro';
+    font-weight: 800;
+    list-style: none;
+}
+
+.divider {
+    width: 15px;
+    height: 15px;
+    margin: 16px;
+    background-color: #8b8b8b;
+}
+
+.main-footer {
+    text-align: center;
+    font-family: 'NaturalMono';
+    font-size: 13px;
+    margin: 24px 0 24px 0;
+}
+
+.main-container .back-button {
+    text-decoration: none;
+    font-family: 'NaturalMono';
+    font-size: 18px;
+    font-style: italic;
+    color: #696969;
+}
+
+@media (max-width: 1100px) {
+
+    h1,
+    h2,
+    ul,
+    nav,
+    .subtitle {
+        padding: 0 10px;
+    }
+}
