@@ -8,7 +8,7 @@ textElements.forEach(text => {
     ease: 'none',
     scrollTrigger: {
       trigger: text,
-      start: 'center 390px',
+      start: 'center 800px',
       end: 'center 20%',
       scrub: true,
     },

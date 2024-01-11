@@ -49,13 +49,13 @@
 body {
     max-width: 1110px;
     margin: 0 auto;
-    background-color: #e0e0e0;
+    background-color: #f0f0f0;
 }
 
 nav {
     font-size: 24px;
     text-transform: uppercase;
-    margin: 24px 0 10vh 0;
+    margin: 20vh 0 10vh 0;
 }
 
 nav a {
@@ -97,12 +97,11 @@ a:hover img:first-child {
 
 .title {
     font-family: '7NeutralGrotesk';
-    font-size: 200px;
-    margin-bottom: 20vh;
+    font-size: 100px;
 
     width: 100%;
     color: rgba(146, 146, 146, 0.2);
-    background: linear-gradient(to right, #1b1b1b, #006CFF) no-repeat;
+    background: linear-gradient(to right, #1b1b1b, #cbcbcb) no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
     background-size: 0%;
@@ -132,7 +131,7 @@ a:hover img:first-child {
     font-size: 50px;
     letter-spacing: -2px;
     text-align: left;
-    margin: 16px 0 0 24px;
+    margin: 16px 0 24px 24px;
 }
 
 .sections-container .product-list {
