@@ -1,4 +1,4 @@
-@import url(./font.css);
+@import url(./style.css);
 
 * {
     box-sizing: border-box;
@@ -9,11 +9,11 @@
 body {
     max-width: 1110px;
     margin: 0 auto;
-    background-color: #f0f0f0;
+    background-color: var(--white-color);
 }
 
 nav {
-    font-size: 24px;
+    font-size: var(--fs-24);
     text-transform: uppercase;
     margin: 20vh 0 10vh 0;
 }
@@ -21,20 +21,16 @@ nav {
 nav a {
     font-family: '8NeutralGrotesk';
     text-decoration: none;
-    color: #7e7e7e;
+    color: var(--lightgrey-color);
     margin-right: 35px;
 }
 
-.main-container {
-    margin: 0;
-    padding: 0;
-}
-
-.hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+p {
+    font-family: 'PPMondwest';
+    font-style: italic;
+    font-size: var(--fs-26);
+    color: var(--darkblack-color);
+    margin-left: 35px;
 }
 
 .head-img {
@@ -45,11 +41,11 @@ nav a {
 
 .title {
     font-family: '7NeutralGrotesk';
-    font-size: 100px;
+    font-size: var(--fs-100);
 
     width: 100%;
-    color: rgba(146, 146, 146, 0.2);
-    background: linear-gradient(to right, #1b1b1b, #cbcbcb) no-repeat;
+    color: var(--dark-color);
+    background: var(--black-to-white);
     -webkit-background-clip: text;
     background-clip: text;
     background-size: 0%;
@@ -65,17 +61,17 @@ nav a {
 .subtitle {
     font-family: 'NaturalMono';
     font-style: italic;
-    font-size: 20px;
+    font-size: var(--fs-24);
     letter-spacing: 1px;
-    color: #696969;
+    color: var(--lightgrey3-color);
     margin: 16px 0 20vh 0;
 }
 
 .sections-container h2 {
     font-family: 'PPMondwest';
     font-style: italic;
-    color: #333333;
-    font-size: 50px;
+    color: var(--darkblack-color);
+    font-size: var(--fs-50);
     letter-spacing: -2px;
     text-align: left;
     margin: 16px 0 24px 24px;
@@ -143,22 +139,22 @@ nav a {
     width: 15px;
     height: 15px;
     margin: 16px;
-    background-color: #8b8b8b;
+    background-color: var(--lightgrey2-color);
 }
 
 .main-footer {
     text-align: center;
     font-family: 'NaturalMono';
-    font-size: 13px;
+    font-size: var(--fs-14);
     margin: 24px 0 24px 0;
 }
 
 .main-container .back-button {
     text-decoration: none;
     font-family: 'NaturalMono';
-    font-size: 18px;
+    font-size: var(--fs-18);
     font-style: italic;
-    color: #696969;
+    color: var(--lightgrey3-color);
 }
 
 @media (max-width: 1100px) {

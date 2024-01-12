@@ -1,139 +1,75 @@
-@import url(./font.css);
+/* fonts */
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    max-width: 1110px;
-    margin: 0 auto;
-    background-color: #f0f0f0;
-}
-
-nav {
-    font-size: 24px;
-    text-transform: uppercase;
-    margin: 20vh 0 10vh 0;
-}
-
-nav a {
-    font-family: '8NeutralGrotesk';
-    text-decoration: none;
-    color: #7e7e7e;
-    margin-right: 35px;
-}
-
-.main-container {
-    margin: 0;
-    padding: 0;
-}
-
-.hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.head-img {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
-}
-
-/* a img:last-child {
-    display: none;
-}
-
-a:hover img:last-child {
-    display: block;
-}
-
-a:hover img:first-child {
-    display: none;
-} */
-
-.title {
+@font-face {
     font-family: '7NeutralGrotesk';
-    font-size: 100px;
-
-    width: 100%;
-    color: rgba(146, 146, 146, 0.2);
-    background: linear-gradient(to right, #1b1b1b, #cbcbcb) no-repeat;
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-size: 0%;
-    transition: background-size cubic-bezier(.1, .5, .5, 5) 0.5s;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    position: relative;
+    src: url(../sources/font/7NeutralGrotesk-Regular.otf),
+        url(../sources/font/7NeutralGrotesk-Regular.ttf);
 }
 
-.subtitle {
-    font-family: 'PPMondwest';
-    font-style: italic;
-    font-size: 18px;
-    letter-spacing: 1px;
-    color: #696969;
-    margin: 16px 0 20vh 0;
+@font-face {
+    font-family: '8NeutralGrotesk';
+    src: url(..//sources/font/8NeutralGrotesk-RegularItalic.otf),
+        url(../sources/font/8NeutralGrotesk-RegularItalic.ttf);
 }
 
-
-.sections-container h2 {
-    font-family: 'PPMondwest';
-    font-style: italic;
-    color: #333333;
-    font-size: 50px;
-    letter-spacing: -2px;
-    text-align: left;
-    margin: 16px 0 24px 24px;
-}
-
-.sections-container .product-list {
-    text-align: center;
-    margin: 10vh 0 10vh 0;
-}
-
-.sections-container .product-list li {
+@font-face {
     font-family: 'MinionPro';
-    font-weight: 800;
-    list-style: none;
+    src: url(../sources/font/MinionPro-Regular.otf),
+        url(../sources/font/MinionPro-Medium.otf),
+        url(../sources/font/MinionPro-It.otf),
+        url(../sources/font/MinionPro-Bold.otf),
+        url(../sources/font/MinionPro-Semibold.otf);
 }
 
-.divider {
-    width: 15px;
-    height: 15px;
-    margin: 16px;
-    background-color: #8b8b8b;
-}
-
-.main-footer {
-    text-align: center;
+@font-face {
     font-family: 'NaturalMono';
-    font-size: 13px;
-    margin: 24px 0 24px 0;
+    src: url(../sources/font/Natural\ Mono-Regular.ttf),
+        url(../sources/font/Natural\ Mono\ Alt-Regular.ttf);
 }
 
-.main-container .back-button {
-    text-decoration: none;
-    font-family: 'NaturalMono';
-    font-size: 18px;
-    font-style: italic;
-    color: #696969;
+@font-face {
+    font-family: 'PPMondwest';
+    src: url(../sources/font/PPMondwest-Regular.otf);
 }
 
-@media (max-width: 1100px) {
+@font-face {
+    font-family: 'PPNeueBit';
+    src: url(../sources/font/PPNeueBit-Bold.otf);
+}
 
-    h1,
-    h2,
-    ul,
-    nav,
-    .subtitle {
-        padding: 0 10px;
-    }
+@font-face {
+    font-family: 'RevolverBlackletter';
+    src: url(../sources/font/RevolverBlackletter-Regular.otf);
+}
+
+:root {
+    /* colors */
+
+    /* General */
+    --white-color: #f0f0f0;
+    --dark-color: rgba(146, 146, 146, 0.2);
+    --darkblack-color: #333333;
+    --lightgrey-color: #7e7e7e;
+    --lightgrey2-color: #8b8b8b;
+    --lightgrey3-color: #696969;
+
+    /* gradients */
+    --black-to-white: linear-gradient(to right, #1b1b1b, #cbcbcb) no-repeat;
+
+    /* Font-size */
+
+    --fs-12: 0.75rem;
+    --fs-14: 0.875rem;
+    --fs-16: 1rem;
+    --fs-18: 1.125rem;
+    --fs-20: 1.25rem;
+    --fs-22: 1.375rem;
+    --fs-24: 1.5rem;
+    --fs-26: 1.625rem;
+    --fs-40: 2.5rem;
+    --fs-42: 2.625rem;
+    --fs-50: 3.125rem;
+    --fs-64: 4rem;
+    --fs-72: 4.5rem;
+    --fs-100: 6.25rem;
 }

@@ -22,12 +22,25 @@ nav a {
     font-family: '8NeutralGrotesk';
     text-decoration: none;
     color: var(--lightgrey-color);
-    margin-right: 35px;
+    margin-right: var(--fs-40);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.head-img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
 }
 
 .title {
     font-family: '7NeutralGrotesk';
-    font-size: var(--fs-100);
+    font-size: 100px;
 
     width: 100%;
     color: var(--dark-color);
@@ -45,12 +58,41 @@ nav a {
 }
 
 .subtitle {
-    font-family: 'NaturalMono';
+    font-family: 'PPMondwest';
     font-style: italic;
-    font-size: var(--fs-20);
+    font-size: var(--fs-18);
     letter-spacing: 1px;
     color: var(--lightgrey3-color);
     margin: 16px 0 20vh 0;
+}
+
+
+.sections-container h2 {
+    font-family: 'PPMondwest';
+    font-style: italic;
+    color: var(--darkblack-color);
+    font-size: var(--fs-50);
+    letter-spacing: -2px;
+    text-align: left;
+    margin: 16px 0 24px 24px;
+}
+
+.sections-container .product-list {
+    text-align: center;
+    margin: 10vh 0 10vh 0;
+}
+
+.sections-container .product-list li {
+    font-family: 'MinionPro';
+    font-weight: 800;
+    list-style: none;
+}
+
+.divider {
+    width: 15px;
+    height: 15px;
+    margin: 16px;
+    background-color: var(--lightgrey2-color);
 }
 
 .main-footer {
@@ -59,9 +101,6 @@ nav a {
     font-size: var(--fs-14);
     margin: 24px 0 24px 0;
 }
-
-/* HERE */
-
 
 .main-container .back-button {
     text-decoration: none;
