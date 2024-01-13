@@ -61,6 +61,7 @@ nav a {
     width: 100%;
     height: 450px;
     object-fit: cover;
+    transition: transform .2s;
     animation: fadeIn 5s, slideIn 2s;
 }
 
