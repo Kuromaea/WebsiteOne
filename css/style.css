@@ -44,9 +44,11 @@
 
 :root {
     /* colors */
+    --lightblue-color: #006CFF;
 
     /* General */
     --white-color: #f0f0f0;
+    --white-op-color: rgba(255, 255, 255, 0.01);
     --dark-color: rgba(146, 146, 146, 0.2);
     --darkblack-color: #333333;
     --lightgrey-color: #7e7e7e;
@@ -54,10 +56,11 @@
     --lightgrey3-color: #696969;
 
     /* gradients */
+    --black-to-blue: linear-gradient(to right, #cbcbcb, #006CFF) no-repeat;
+    --black-to-black: linear-gradient(to right, #1b1b1b, #1b1b1b) no-repeat;
     --black-to-white: linear-gradient(to right, #1b1b1b, #cbcbcb) no-repeat;
 
     /* Font-size */
-
     --fs-12: 0.75rem;
     --fs-14: 0.875rem;
     --fs-16: 1rem;

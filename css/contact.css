@@ -60,10 +60,56 @@ nav a {
     margin: 24px 0 24px 0;
 }
 
-/* HERE */
+.product-contact {
+    text-align: center;
+    padding: 36px;
+}
 
+.mail {
+    display: block;
+    font-family: 'NaturalMono';
+    font-size: var(--fs-22);
+    margin-bottom: 26px;
+}
+
+.email :nth-child(2) {
+    font-family: 'NaturalMono';
+    font-size: var(--fs-18);
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 18px;
+    margin-bottom: 36px;
+}
+
+.msg {
+    display: block;
+    font-family: 'NaturalMono';
+    font-size: var(--fs-22);
+    margin-bottom: 26px;
+}
+
+.message :nth-child(2) {
+    font-size: var(--fs-18);
+    width: 100%;
+    height: 50vh;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 18px;
+    margin-bottom: 36px;
+}
+
+.submit {
+    font-family: '7NeutralGrotesk';
+    font-size: var(--fs-24);
+    padding: 14px 36px 20px 36px;
+    border-radius: 5px;
+}
 
 .main-container .back-button {
+    display: block;
+    text-align: center;
     text-decoration: none;
     font-family: 'NaturalMono';
     font-size: var(--fs-18);

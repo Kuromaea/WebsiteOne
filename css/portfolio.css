@@ -150,6 +150,8 @@ p {
 }
 
 .main-container .back-button {
+    display: block;
+    text-align: center;
     text-decoration: none;
     font-family: 'NaturalMono';
     font-size: var(--fs-18);
