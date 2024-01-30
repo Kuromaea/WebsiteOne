@@ -1,4 +1,4 @@
-# Project Website One - My First Personal Endeavor
+# Project Website One
 
 ---
 
