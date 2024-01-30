@@ -26,9 +26,8 @@ I conscientiously applied various HTML concepts, adhering to development princip
 The site includes a header, a landing page, and an attempt at a portfolio. However, the final output will remain static for now, as I don't plan on revisiting this project in the immediate future. It served more as a foundation, a starting point for something new.
 
 **Links:**
-
-Github: https://github.com/Kuromaea
-Instagram: https://www.instagram.com/kuromaea/?hl=fr
-https://bento.me/kuromaea
+  - Github: https://github.com/Kuromaea
+  - Instagram: https://www.instagram.com/kuromaea/?hl=fr
+  - https://bento.me/kuromaea
 
 
