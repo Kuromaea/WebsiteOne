@@ -12,10 +12,13 @@ body {
     background-color: var(--white-color);
 }
 
+/* NAVIGATION */
 nav {
+    display: flex;
     font-size: var(--fs-24);
     text-transform: uppercase;
     margin: 20vh 0 10vh 0;
+    animation: slideOut 3s;
 }
 
 nav a {
@@ -23,6 +26,22 @@ nav a {
     text-decoration: none;
     color: var(--lightgrey-color);
     margin-right: 35px;
+}
+
+.animated-links::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--lightgrey-color);
+
+    transition: width .3s;
+}
+
+.animated-links:hover::after {
+    width: 100%;
+
+    transition: width .3s;
 }
 
 .title {
@@ -53,11 +72,10 @@ nav a {
     margin: 16px 0 20vh 0;
 }
 
-.main-footer {
-    text-align: center;
-    font-family: 'NaturalMono';
-    font-size: var(--fs-14);
-    margin: 24px 0 24px 0;
+/* MAIN */
+.main-container {
+    width: 100%;
+    margin: 0 auto;
 }
 
 .product-contact {
@@ -117,6 +135,15 @@ nav a {
     color: var(--lightgrey3-color);
 }
 
+/* FOOTER */
+.main-footer {
+    text-align: center;
+    font-family: 'NaturalMono';
+    font-size: var(--fs-14);
+    margin: 24px 0 24px 0;
+}
+
+
 /* RESPONSIVE */
 @media (max-width: 1100px) {
 
@@ -126,5 +153,18 @@ nav a {
     nav,
     .subtitle {
         padding: 0 10px;
+    }
+}
+
+/* ANIMATIONS */
+@keyframes slideOut {
+    from {
+        margin-left: -100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 300%;
     }
 }

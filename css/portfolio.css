@@ -12,10 +12,13 @@ body {
     background-color: var(--white-color);
 }
 
+/* NAVIGATION */
 nav {
+    display: flex;
     font-size: var(--fs-24);
     text-transform: uppercase;
     margin: 20vh 0 10vh 0;
+    animation: slideOut 3s;
 }
 
 nav a {
@@ -23,6 +26,22 @@ nav a {
     text-decoration: none;
     color: var(--lightgrey-color);
     margin-right: 35px;
+}
+
+.animated-links::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--lightgrey-color);
+
+    transition: width .3s;
+}
+
+.animated-links:hover::after {
+    width: 100%;
+
+    transition: width .3s;
 }
 
 p {
@@ -67,6 +86,12 @@ p {
     margin: 16px 0 20vh 0;
 }
 
+/* MAIN */
+.main-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
 .sections-container h2 {
     font-family: 'PPMondwest';
     font-style: italic;
@@ -77,55 +102,47 @@ p {
     margin: 16px 0 24px 24px;
 }
 
-.sections-container .img {
+.sections-container .img-1 {
     width: 100%;
     min-height: 450px;
-
-    background-image: url(../sources/img/1.png);
+    background-image: url(../assets/img/1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: contain;
-
     margin: 0 0 24px 0;
 }
 
 .sections-container .img-2 {
     width: 100%;
     min-height: 450px;
-
-    background-image: url(../sources/img/2.png);
+    background-image: url(../assets/img/2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: contain;
-
     margin: 0 0 24px 0;
 }
 
 .sections-container .img-3 {
     width: 100%;
     min-height: 450px;
-
-    background-image: url(../sources/img/3.png);
+    background-image: url(../assets/img/3.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: contain;
-
     margin: 0 0 24px 0;
 }
 
 .sections-container .img-4 {
     width: 100%;
     min-height: 450px;
-
-    background-image: url(../sources/img/4.png);
+    background-image: url(../assets/img/4.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: contain;
-
     margin: 0 0 24px 0;
 }
 
@@ -142,13 +159,6 @@ p {
     background-color: var(--lightgrey2-color);
 }
 
-.main-footer {
-    text-align: center;
-    font-family: 'NaturalMono';
-    font-size: var(--fs-14);
-    margin: 24px 0 24px 0;
-}
-
 .main-container .back-button {
     display: block;
     text-align: center;
@@ -158,6 +168,15 @@ p {
     font-style: italic;
     color: var(--lightgrey3-color);
 }
+
+/* FOOTER */
+.footer-container {
+    text-align: center;
+    font-family: 'NaturalMono';
+    font-size: var(--fs-14);
+    margin: 24px 0 24px 0;
+}
+
 
 /* RESPONSIVE */
 @media (max-width: 1100px) {
@@ -175,5 +194,18 @@ p {
     .sections-container .img-3,
     .sections-container .img-4 {
         background-size: cover;
+    }
+}
+
+/* ANIMATIONS */
+@keyframes slideOut {
+    from {
+        margin-left: -100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0;
+        width: 300%;
     }
 }

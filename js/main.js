@@ -10,7 +10,7 @@ titleElements.forEach(text => {
     ease: 'none',
     scrollTrigger: {
       trigger: text,
-      start: 'center 800px',
+      start: 'center 80%',
       end: 'center 20%',
       scrub: true,
     },
