@@ -16,9 +16,6 @@ Explications de ce que j’ai appris durant la réalisation du projet (sous form
 
 - Utiliser des emoji pour définir chaque elements avec l’utilisation des règles de markdown également
 
-I put this together just before diving into my JavaScript training (as of January 30, 2024).
-Here's what I aimed to achieve:
-
 - 1️⃣ Apply proper HTML.
 - 2️⃣ Use correct HTML syntax.
 - 3️⃣ Understand the connection between HTML and CSS.
