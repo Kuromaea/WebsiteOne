@@ -117,6 +117,7 @@ nav a {
     color: var(--lightgrey3-color);
 }
 
+/* RESPONSIVE */
 @media (max-width: 1100px) {
 
     h1,

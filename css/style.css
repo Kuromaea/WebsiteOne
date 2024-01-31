@@ -2,44 +2,44 @@
 
 @font-face {
     font-family: '7NeutralGrotesk';
-    src: url(../sources/font/7NeutralGrotesk-Regular.otf),
-        url(../sources/font/7NeutralGrotesk-Regular.ttf);
+    src: url(../assets/font/7NeutralGrotesk-Regular.otf),
+        url(../assets/font/7NeutralGrotesk-Regular.ttf);
 }
 
 @font-face {
     font-family: '8NeutralGrotesk';
-    src: url(..//sources/font/8NeutralGrotesk-RegularItalic.otf),
-        url(../sources/font/8NeutralGrotesk-RegularItalic.ttf);
+    src: url(..//assets/font/8NeutralGrotesk-RegularItalic.otf),
+        url(../assets/font/8NeutralGrotesk-RegularItalic.ttf);
 }
 
 @font-face {
     font-family: 'MinionPro';
-    src: url(../sources/font/MinionPro-Regular.otf),
-        url(../sources/font/MinionPro-Medium.otf),
-        url(../sources/font/MinionPro-It.otf),
-        url(../sources/font/MinionPro-Bold.otf),
-        url(../sources/font/MinionPro-Semibold.otf);
+    src: url(../assets/font/MinionPro-Regular.otf),
+        url(../assets/font/MinionPro-Medium.otf),
+        url(../assets/font/MinionPro-It.otf),
+        url(../assets/font/MinionPro-Bold.otf),
+        url(../assets/font/MinionPro-Semibold.otf);
 }
 
 @font-face {
     font-family: 'NaturalMono';
-    src: url(../sources/font/Natural\ Mono-Regular.ttf),
-        url(../sources/font/Natural\ Mono\ Alt-Regular.ttf);
+    src: url(../assets/font/Natural\ Mono-Regular.ttf),
+        url(../assets/font/Natural\ Mono\ Alt-Regular.ttf);
 }
 
 @font-face {
     font-family: 'PPMondwest';
-    src: url(../sources/font/PPMondwest-Regular.otf);
+    src: url(../assets/font/PPMondwest-Regular.otf);
 }
 
 @font-face {
     font-family: 'PPNeueBit';
-    src: url(../sources/font/PPNeueBit-Bold.otf);
+    src: url(../assets/font/PPNeueBit-Bold.otf);
 }
 
 @font-face {
     font-family: 'RevolverBlackletter';
-    src: url(../sources/font/RevolverBlackletter-Regular.otf);
+    src: url(../assets/font/RevolverBlackletter-Regular.otf);
 }
 
 :root {

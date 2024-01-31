@@ -1,8 +1,10 @@
+// gsap_scrollTrigger
+
 gsap.registerPlugin(ScrollTrigger);
 
-const textElements = gsap.utils.toArray('.title');
+const titleElements = gsap.utils.toArray('.title');
 
-textElements.forEach(text => {
+titleElements.forEach(text => {
   gsap.to(text, {
     backgroundSize: '100%',
     ease: 'none',
