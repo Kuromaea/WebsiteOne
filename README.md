@@ -4,7 +4,7 @@
 
 # Introduction 🎞
 
-HERE
+https://github.com/Kuromaea/WebsiteOne/assets/41955164/43ec24c8-0f32-4da2-af36-bb8412f1ceb3
 
 ## 1. Technologies 💻
 
