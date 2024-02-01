@@ -13,7 +13,7 @@ https://github.com/Kuromaea/WebsiteOne/assets/41955164/43ec24c8-0f32-4da2-af36-b
 - <code>JavaScript</code>
 - <code>GSAP</code>
 
-## 2. Coding goals ✨
+## 2. Coding ✨
 
 Development of an initial website prototype featuring a minimalist portfolio style.
 
